@@ -4,7 +4,6 @@
   font-family: "Open Sans", sans-serif;
   font-family: "Poppins", sans-serif;
   font-family: "Work Sans", sans-serif;
-  /* background-color: #ffff; */
 }
 /*----------- nav bar style ------------- */
 header {
@@ -55,12 +54,10 @@ header {
   border: none;
   margin-top: 5px;
   border-radius: 15px;
-  
 }
 
 /* company logos  */
 .line {
-  
   opacity: 20%;
   width: 80%;
   margin: 0 auto;
@@ -72,34 +69,31 @@ header {
 }
 
 /*----------------------- collection style ----------------- */
-.collection{
+.collection {
   margin-top: 30px;
-  
 }
-.collection-title{
+.collection-title {
   text-align: center;
   padding: 20px;
 }
-.collection-items{
+.collection-items {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   align-items: center;
-  
 }
-.item{
+.item {
   margin-left: 20px;
   width: 330px;
   box-shadow: 5px 5px 5px rgb(231, 235, 236);
-  
 }
-.item p{
+.item p {
   color: #787885;
 }
-.item-pic{
+.item-pic {
   width: 100%;
 }
-.see-more{
+.see-more {
   color: rgba(224, 44, 109, 0.87);
   text-align: right;
   padding-right: 30px;
@@ -110,45 +104,113 @@ header {
 }
 
 /* feature section  */
-.feature{
+.feature {
   display: flex;
   align-items: center;
   gap: 96px;
 }
-.feature img{
+.feature img {
   margin-left: 20px;
   margin: 20px;
   padding: 20px;
-} 
-.feature h3{
+}
+.feature h3 {
   font-size: 38px;
   font-weight: 700;
   padding-bottom: 20px;
 }
-.feature p{
-  color: #6C6C6C;
+.feature p {
+  color: #6c6c6c;
   align-items: center;
 }
 /* footer style  */
 
-.footer{
+.footer {
   background-color: rgb(19, 48, 65);
   text-align: center;
   color: white;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.footer h4{
+.footer h4 {
   font-size: 24px;
   padding-bottom: 5px;
 }
-.footer p{
+.footer p {
   margin-bottom: 5px;
 }
-.footer-icon{
+.footer-icon {
   display: flex;
   position: relative;
   left: 46%;
   padding-top: 5px;
   gap: 15px;
+}
+.hide{
+  display: hide;
+}
+@media (max-width: 672px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    
+  }
+  .hero-img {
+    background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0px;
+    width: 100%;
+  }
+  .collection-items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    align-items: center;
+    padding-left: 5px;
+  }
+  .feature {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+  }
+  .feature h3{
+    margin-top: 15px;
+  }
+  .feature p{
+    padding: 10px;
+  }
+  .feature img{
+    width: 80%;
+  } 
+  .footer-icon{
+    left: 35%;
+  }
+  .company-logos{
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .title,.description{
+    text-align: center;
+    align-items: center;
+  }
+  #btn{
+    position: relative;
+    left: 35%;
+  }
+  .contatiner-info{
+    padding: 0px;
+  }
+  .nav-link{
+    display: none;
+  }
+  .header-title{
+    align-items: start;
+    position: relative;
+    right: 30px;
+  }
 }
